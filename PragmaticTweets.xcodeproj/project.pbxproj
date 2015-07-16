@@ -673,6 +673,7 @@
 				46FEC0481B579A29003B04B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46FF35EC1B44229A00005636 /* Build configuration list for PBXProject "PragmaticTweets" */ = {
 			isa = XCConfigurationList;
