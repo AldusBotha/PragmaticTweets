@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Ji-Xp-Vv0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--Keyboard View Controller-->
+        <scene sceneID="2qO-uR-7WP">
+            <objects>
+                <viewController id="8Ji-Xp-Vv0" customClass="KeyboardViewController" customModule="PragmaticTweetsKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wA5-2k-WAm"/>
+                        <viewControllerLayoutGuide type="bottom" id="iA1-Sp-cNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4OK-fH-ehM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="204"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooI-Si-BS0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.43695072570070592" green="0.55051203626260115" blue="0.67612892670157065" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Pragmatic Tweets" id="h9Y-dK-6NF">
+                                        <barButtonItem key="rightBarButtonItem" title="🌐 " id="LNc-RF-UfY">
+                                            <connections>
+                                                <action selector="nextKeyboardBarButtonTapped:" destination="8Ji-Xp-Vv0" id="i1u-2f-AQY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EG1-sX-05q">
+                                <rect key="frame" x="0.0" y="44" width="600" height="160"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4g6-er-7Zk"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DefaultCell" id="cDc-BP-QT2">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cDc-BP-QT2" id="n72-k6-KkA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Ji-Xp-Vv0" id="bgb-jV-nvn"/>
+                                    <outlet property="delegate" destination="8Ji-Xp-Vv0" id="Dob-fi-sIh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EG1-sX-05q" firstAttribute="leading" secondItem="4OK-fH-ehM" secondAttribute="leading" id="8jC-6D-FD4"/>
+                            <constraint firstItem="ooI-Si-BS0" firstAttribute="top" secondItem="4OK-fH-ehM" secondAttribute="top" id="9cA-li-Ve8"/>
+                            <constraint firstItem="ooI-Si-BS0" firstAttribute="leading" secondItem="4OK-fH-ehM" secondAttribute="leading" id="Bb4-l6-M4S"/>
+                            <constraint firstItem="EG1-sX-05q" firstAttribute="top" secondItem="ooI-Si-BS0" secondAttribute="bottom" id="DYY-Uc-Qk4"/>
+                            <constraint firstAttribute="trailing" secondItem="EG1-sX-05q" secondAttribute="trailing" id="fSC-y6-Qgp"/>
+                            <constraint firstAttribute="trailing" secondItem="ooI-Si-BS0" secondAttribute="trailing" id="qea-ht-8P7"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="204"/>
+                    <connections>
+                        <outlet property="nextKeyboardBarButton" destination="LNc-RF-UfY" id="y3v-zw-Uhc"/>
+                        <outlet property="tableView" destination="EG1-sX-05q" id="qJ6-Dt-d74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yn6-Q1-59a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="586"/>
+        </scene>
+    </scenes>
+</document>
