@@ -369,6 +369,7 @@
 				46FF36041B44229B00005636 /* PragmaticTweetsTests */,
 				464F48F41B58F19300160A2D /* PragmaticTweetsUITests */,
 				46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */,
+				463750851B57CF5600511265 /* PragmaticTweets UI Tests */,
 			);
 		};
 /* End PBXProject section */
