@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46115F991B4D108C008A05E0 /* UserImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46115F981B4D108C008A05E0 /* UserImageDetailViewController.swift */; };
+		464F48F81B58F19300160A2D /* PragmaticTweetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F48F71B58F19300160A2D /* PragmaticTweetsUITests.swift */; };
 		46FEC0411B579A29003B04B0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEC0401B579A29003B04B0 /* KeyboardViewController.swift */; };
-		46FEC0451B579A29003B04B0 /* PragmaticTweetsKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FEC04D1B579E04003B04B0 /* PragmaticTweetsKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FEC04C1B579E04003B04B0 /* PragmaticTweetsKeyboard.storyboard */; };
 		46FEC04E1B57A675003B04B0 /* TwitterAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF36381B4BB28D00005636 /* TwitterAPIRequest.swift */; };
 		46FEC04F1B57A675003B04B0 /* TwitterAPIRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF363A1B4BB35400005636 /* TwitterAPIRequestDelegate.swift */; };
@@ -30,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		464F48FA1B58F19300160A2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FF35F01B44229B00005636;
+			remoteInfo = PragmaticTweets;
+		};
 		46FEC0431B579A29003B04B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
@@ -38,13 +45,6 @@
 			remoteInfo = PragmaticTweetsKeyboard;
 		};
 		46FF36061B44229B00005636 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46FF35F01B44229B00005636;
-			remoteInfo = PragmaticTweets;
-		};
-		46FF36111B44229B00005636 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
 			proxyType = 1;
@@ -60,7 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				46FEC0451B579A29003B04B0 /* PragmaticTweetsKeyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,21 +68,23 @@
 
 /* Begin PBXFileReference section */
 		46115F981B4D108C008A05E0 /* UserImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserImageDetailViewController.swift; sourceTree = "<group>"; };
-		46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PragmaticTweetsKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		464F48F51B58F19300160A2D /* PragmaticTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragmaticTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		464F48F71B58F19300160A2D /* PragmaticTweetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragmaticTweetsUITests.swift; sourceTree = "<group>"; };
+		464F48F91B58F19300160A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468F5BEC1B58F2ED00029F2C /* PragmaticTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PragmaticTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		468F5BED1B58F2ED00029F2C /* PragmaticTweetsKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PragmaticTweetsKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		468F5BEE1B58F2ED00029F2C /* PragmaticTweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragmaticTweetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FEC0401B579A29003B04B0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		46FEC0421B579A29003B04B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FEC04C1B579E04003B04B0 /* PragmaticTweetsKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PragmaticTweetsKeyboard.storyboard; sourceTree = "<group>"; };
-		46FF35F11B44229B00005636 /* PragmaticTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PragmaticTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF35F41B44229B00005636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FF35F61B44229B00005636 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		46FF35F91B44229B00005636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46FF35FB1B44229B00005636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46FF35FE1B44229B00005636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46FF36001B44229B00005636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46FF36051B44229B00005636 /* PragmaticTweetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragmaticTweetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF36091B44229B00005636 /* PragmaticTweetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragmaticTweetsTests.swift; sourceTree = "<group>"; };
 		46FF360B1B44229B00005636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46FF36101B44229B00005636 /* PragmaticTweetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragmaticTweetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF36221B45490D00005636 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		46FF36231B45490D00005636 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		46FF36251B454A8E00005636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -98,6 +99,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		464F48F21B58F19300160A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03B1B579A29003B04B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,13 +127,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46FF360D1B44229B00005636 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -135,6 +136,26 @@
 				46115F981B4D108C008A05E0 /* UserImageDetailViewController.swift */,
 			);
 			name = "User Image Detail VC";
+			sourceTree = "<group>";
+		};
+		464F48F61B58F19300160A2D /* PragmaticTweetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				464F48F71B58F19300160A2D /* PragmaticTweetsUITests.swift */,
+				464F48F91B58F19300160A2D /* Info.plist */,
+			);
+			path = PragmaticTweetsUITests;
+			sourceTree = "<group>";
+		};
+		468F5BEF1B58F30F00029F2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468F5BEC1B58F2ED00029F2C /* PragmaticTweets.app */,
+				468F5BED1B58F2ED00029F2C /* PragmaticTweetsKeyboard.appex */,
+				468F5BEE1B58F2ED00029F2C /* PragmaticTweetsTests.xctest */,
+				464F48F51B58F19300160A2D /* PragmaticTweetsUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		46FEC03F1B579A29003B04B0 /* PragmaticTweetsKeyboard */ = {
@@ -151,23 +172,13 @@
 			isa = PBXGroup;
 			children = (
 				46FF35F31B44229B00005636 /* PragmaticTweets */,
-				46FF36081B44229B00005636 /* PragmaticTweetsTests */,
 				46FEC03F1B579A29003B04B0 /* PragmaticTweetsKeyboard */,
-				46FF35F21B44229B00005636 /* Products */,
+				46FF36081B44229B00005636 /* PragmaticTweetsTests */,
+				464F48F61B58F19300160A2D /* PragmaticTweetsUITests */,
+				468F5BEF1B58F30F00029F2C /* Products */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
-		};
-		46FF35F21B44229B00005636 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				46FF35F11B44229B00005636 /* PragmaticTweets.app */,
-				46FF36051B44229B00005636 /* PragmaticTweetsTests.xctest */,
-				46FF36101B44229B00005636 /* PragmaticTweetsUITests.xctest */,
-				46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
 		};
 		46FF35F31B44229B00005636 /* PragmaticTweets */ = {
 			isa = PBXGroup;
@@ -243,6 +254,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		464F48F41B58F19300160A2D /* PragmaticTweetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464F48FC1B58F19300160A2D /* Build configuration list for PBXNativeTarget "PragmaticTweetsUITests" */;
+			buildPhases = (
+				464F48F11B58F19300160A2D /* Sources */,
+				464F48F21B58F19300160A2D /* Frameworks */,
+				464F48F31B58F19300160A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				464F48FB1B58F19300160A2D /* PBXTargetDependency */,
+			);
+			name = PragmaticTweetsUITests;
+			productName = PragmaticTweetsUITests;
+			productReference = 464F48F51B58F19300160A2D /* PragmaticTweetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FEC0461B579A29003B04B0 /* Build configuration list for PBXNativeTarget "PragmaticTweetsKeyboard" */;
@@ -257,7 +286,7 @@
 			);
 			name = PragmaticTweetsKeyboard;
 			productName = PragmaticTweetsKeyboard;
-			productReference = 46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */;
+			productReference = 468F5BED1B58F2ED00029F2C /* PragmaticTweetsKeyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		46FF35F01B44229B00005636 /* PragmaticTweets */ = {
@@ -276,7 +305,7 @@
 			);
 			name = PragmaticTweets;
 			productName = PragmaticTweets;
-			productReference = 46FF35F11B44229B00005636 /* PragmaticTweets.app */;
+			productReference = 468F5BEC1B58F2ED00029F2C /* PragmaticTweets.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46FF36041B44229B00005636 /* PragmaticTweetsTests */ = {
@@ -294,26 +323,8 @@
 			);
 			name = PragmaticTweetsTests;
 			productName = PragmaticTweetsTests;
-			productReference = 46FF36051B44229B00005636 /* PragmaticTweetsTests.xctest */;
+			productReference = 468F5BEE1B58F2ED00029F2C /* PragmaticTweetsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		46FF360F1B44229B00005636 /* PragmaticTweetsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46FF361F1B44229B00005636 /* Build configuration list for PBXNativeTarget "PragmaticTweetsUITests" */;
-			buildPhases = (
-				46FF360C1B44229B00005636 /* Sources */,
-				46FF360D1B44229B00005636 /* Frameworks */,
-				46FF360E1B44229B00005636 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46FF36121B44229B00005636 /* PBXTargetDependency */,
-			);
-			name = PragmaticTweetsUITests;
-			productName = PragmaticTweetsUITests;
-			productReference = 46FF36101B44229B00005636 /* PragmaticTweetsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -324,6 +335,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Aldus Botha";
 				TargetAttributes = {
+					464F48F41B58F19300160A2D = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 46FF35F01B44229B00005636;
+					};
 					46FEC03D1B579A29003B04B0 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -331,10 +346,6 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					46FF36041B44229B00005636 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 46FF35F01B44229B00005636;
-					};
-					46FF360F1B44229B00005636 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 46FF35F01B44229B00005636;
 					};
@@ -350,19 +361,26 @@
 				de,
 			);
 			mainGroup = 46FF35E81B44229A00005636;
-			productRefGroup = 46FF35F21B44229B00005636 /* Products */;
+			productRefGroup = 46FF35E81B44229A00005636;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				46FF35F01B44229B00005636 /* PragmaticTweets */,
 				46FF36041B44229B00005636 /* PragmaticTweetsTests */,
-				46FF360F1B44229B00005636 /* PragmaticTweetsUITests */,
+				464F48F41B58F19300160A2D /* PragmaticTweetsUITests */,
 				46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		464F48F31B58F19300160A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03C1B579A29003B04B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,16 +407,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46FF360E1B44229B00005636 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		464F48F11B58F19300160A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464F48F81B58F19300160A2D /* PragmaticTweetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03A1B579A29003B04B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,16 +453,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46FF360C1B44229B00005636 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		464F48FB1B58F19300160A2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46FF35F01B44229B00005636 /* PragmaticTweets */;
+			targetProxy = 464F48FA1B58F19300160A2D /* PBXContainerItemProxy */;
+		};
 		46FEC0441B579A29003B04B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */;
@@ -453,11 +470,6 @@
 			isa = PBXTargetDependency;
 			target = 46FF35F01B44229B00005636 /* PragmaticTweets */;
 			targetProxy = 46FF36061B44229B00005636 /* PBXContainerItemProxy */;
-		};
-		46FF36121B44229B00005636 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46FF35F01B44229B00005636 /* PragmaticTweets */;
-			targetProxy = 46FF36111B44229B00005636 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,6 +496,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		464F48FD1B58F19300160A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PragmaticTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aldus-glucode.com.PragmaticTweetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PragmaticTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		464F48FE1B58F19300160A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PragmaticTweetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aldus-glucode.com.PragmaticTweetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PragmaticTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		46FEC0471B579A29003B04B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -639,33 +675,18 @@
 			};
 			name = Release;
 		};
-		46FF36201B44229B00005636 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PragmaticTweetsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.aldus.PragmaticTweetsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PragmaticTweets;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		46FF36211B44229B00005636 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PragmaticTweetsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.aldus.PragmaticTweetsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PragmaticTweets;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		464F48FC1B58F19300160A2D /* Build configuration list for PBXNativeTarget "PragmaticTweetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464F48FD1B58F19300160A2D /* Debug */,
+				464F48FE1B58F19300160A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46FEC0461B579A29003B04B0 /* Build configuration list for PBXNativeTarget "PragmaticTweetsKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -698,15 +719,6 @@
 			buildConfigurations = (
 				46FF361D1B44229B00005636 /* Debug */,
 				46FF361E1B44229B00005636 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46FF361F1B44229B00005636 /* Build configuration list for PBXNativeTarget "PragmaticTweetsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46FF36201B44229B00005636 /* Debug */,
-				46FF36211B44229B00005636 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

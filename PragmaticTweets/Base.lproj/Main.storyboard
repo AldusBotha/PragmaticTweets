@@ -130,6 +130,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTR-UZ-ZRG">
                                             <rect key="frame" x="91" y="8" width="94" height="21"/>
                                             <animations/>
+                                            <accessibility key="accessibilityConfiguration" label="cellUserName"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -208,6 +209,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-8g-uZd">
                                 <rect key="frame" x="20" y="72" width="60" height="60"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="tweetDetailUserButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3Ey-sN-INj"/>
                                     <constraint firstAttribute="width" constant="60" id="99b-eF-OXd"/>
@@ -220,6 +222,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Real Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki7-2j-AB4">
                                 <rect key="frame" x="88" y="72" width="492" height="21"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="tweetDetailUserName"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -227,6 +230,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-Ni-jas">
                                 <rect key="frame" x="88" y="101" width="492" height="21"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -291,6 +295,9 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omb-x9-1UY">
                                 <rect key="frame" x="250" y="28" width="100" height="100"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="userDetailImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Ap1-ch-9Ca"/>
@@ -303,6 +310,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-2G-Stw">
                                 <rect key="frame" x="237" y="136" width="126" height="21"/>
                                 <animations/>
+                                <accessibility key="accessibilityConfiguration" label="userDetailUserName"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>

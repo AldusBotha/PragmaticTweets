@@ -43,13 +43,23 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "463750851B57CF5600511265"
+               BuildableName = "PragmaticTweets UI Tests.xctest"
+               BlueprintName = "PragmaticTweets UI Tests"
+               ReferencedContainer = "container:PragmaticTweets.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "46FEC03D1B579A29003B04B0"
-            BuildableName = "PragmaticTweetsKeyboard.appex"
-            BlueprintName = "PragmaticTweetsKeyboard"
+            BlueprintIdentifier = "46FF35F01B44229B00005636"
+            BuildableName = "PragmaticTweets.app"
+            BlueprintName = "PragmaticTweets"
             ReferencedContainer = "container:PragmaticTweets.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,8 +77,12 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Today">
+      </RemoteRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "46FF35F01B44229B00005636"
@@ -76,7 +90,7 @@
             BlueprintName = "PragmaticTweets"
             ReferencedContainer = "container:PragmaticTweets.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
