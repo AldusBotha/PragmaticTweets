@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46115F991B4D108C008A05E0 /* UserImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46115F981B4D108C008A05E0 /* UserImageDetailViewController.swift */; };
+		463750891B57CF5600511265 /* PragmaticTweets_UI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463750881B57CF5600511265 /* PragmaticTweets_UI_Tests.swift */; };
 		46FEC0411B579A29003B04B0 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEC0401B579A29003B04B0 /* KeyboardViewController.swift */; };
 		46FEC0451B579A29003B04B0 /* PragmaticTweetsKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FEC04D1B579E04003B04B0 /* PragmaticTweetsKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FEC04C1B579E04003B04B0 /* PragmaticTweetsKeyboard.storyboard */; };
@@ -30,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4637508B1B57CF5600511265 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FF35F01B44229B00005636;
+			remoteInfo = PragmaticTweets;
+		};
 		46FEC0431B579A29003B04B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46FF35E91B44229A00005636 /* Project object */;
@@ -69,6 +77,9 @@
 
 /* Begin PBXFileReference section */
 		46115F981B4D108C008A05E0 /* UserImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserImageDetailViewController.swift; sourceTree = "<group>"; };
+		463750861B57CF5600511265 /* PragmaticTweets UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PragmaticTweets UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		463750881B57CF5600511265 /* PragmaticTweets_UI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragmaticTweets_UI_Tests.swift; sourceTree = "<group>"; };
+		4637508A1B57CF5600511265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PragmaticTweetsKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FEC0401B579A29003B04B0 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		46FEC0421B579A29003B04B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		463750831B57CF5600511265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03B1B579A29003B04B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +155,15 @@
 			name = "User Image Detail VC";
 			sourceTree = "<group>";
 		};
+		463750871B57CF5600511265 /* PragmaticTweets UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				463750881B57CF5600511265 /* PragmaticTweets_UI_Tests.swift */,
+				4637508A1B57CF5600511265 /* Info.plist */,
+			);
+			path = "PragmaticTweets UI Tests";
+			sourceTree = "<group>";
+		};
 		46FEC03F1B579A29003B04B0 /* PragmaticTweetsKeyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +180,7 @@
 				46FF35F31B44229B00005636 /* PragmaticTweets */,
 				46FF36081B44229B00005636 /* PragmaticTweetsTests */,
 				46FEC03F1B579A29003B04B0 /* PragmaticTweetsKeyboard */,
+				463750871B57CF5600511265 /* PragmaticTweets UI Tests */,
 				46FF35F21B44229B00005636 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,6 +193,7 @@
 				46FF36051B44229B00005636 /* PragmaticTweetsTests.xctest */,
 				46FF36101B44229B00005636 /* PragmaticTweetsUITests.xctest */,
 				46FEC03E1B579A29003B04B0 /* PragmaticTweetsKeyboard.appex */,
+				463750861B57CF5600511265 /* PragmaticTweets UI Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +272,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		463750851B57CF5600511265 /* PragmaticTweets UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4637508D1B57CF5600511265 /* Build configuration list for PBXNativeTarget "PragmaticTweets UI Tests" */;
+			buildPhases = (
+				463750821B57CF5600511265 /* Sources */,
+				463750831B57CF5600511265 /* Frameworks */,
+				463750841B57CF5600511265 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4637508C1B57CF5600511265 /* PBXTargetDependency */,
+			);
+			name = "PragmaticTweets UI Tests";
+			productName = "PragmaticTweets UI Tests";
+			productReference = 463750861B57CF5600511265 /* PragmaticTweets UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46FEC0461B579A29003B04B0 /* Build configuration list for PBXNativeTarget "PragmaticTweetsKeyboard" */;
@@ -324,6 +371,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Aldus Botha";
 				TargetAttributes = {
+					463750851B57CF5600511265 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 46FF35F01B44229B00005636;
+					};
 					46FEC03D1B579A29003B04B0 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -358,11 +409,19 @@
 				46FF36041B44229B00005636 /* PragmaticTweetsTests */,
 				46FF360F1B44229B00005636 /* PragmaticTweetsUITests */,
 				46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */,
+				463750851B57CF5600511265 /* PragmaticTweets UI Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		463750841B57CF5600511265 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03C1B579A29003B04B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +458,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		463750821B57CF5600511265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463750891B57CF5600511265 /* PragmaticTweets_UI_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FEC03A1B579A29003B04B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +511,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4637508C1B57CF5600511265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46FF35F01B44229B00005636 /* PragmaticTweets */;
+			targetProxy = 4637508B1B57CF5600511265 /* PBXContainerItemProxy */;
+		};
 		46FEC0441B579A29003B04B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46FEC03D1B579A29003B04B0 /* PragmaticTweetsKeyboard */;
@@ -484,6 +556,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4637508E1B57CF5600511265 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PragmaticTweets UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aldus-glucode.com.PragmaticTweets-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PragmaticTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4637508F1B57CF5600511265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PragmaticTweets UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "aldus-glucode.com.PragmaticTweets-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PragmaticTweets;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		46FEC0471B579A29003B04B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -666,6 +762,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4637508D1B57CF5600511265 /* Build configuration list for PBXNativeTarget "PragmaticTweets UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4637508E1B57CF5600511265 /* Debug */,
+				4637508F1B57CF5600511265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		46FEC0461B579A29003B04B0 /* Build configuration list for PBXNativeTarget "PragmaticTweetsKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

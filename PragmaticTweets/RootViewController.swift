@@ -66,8 +66,8 @@ public class RootViewController: UITableViewController, TwitterAPIRequestDelegat
             let cgImage = ciContext.createCGImage (ciImage!, fromRect: ciImage!.extent)
             let tweetImage = UIImage (CGImage: cgImage)
             let tweetVC = SLComposeViewController (forServiceType: SLServiceTypeTwitter)
-            let message = NSLocalizedString("Here's a photo I tweeted. #pragsios8", comment:"")
-            tweetVC.setInitialText(message)
+//            let message = NSLocalizedString("Here's a photo I tweeted. #pragsios8", comment:"")
+//            tweetVC.setInitialText(message)
             tweetVC.addImage(tweetImage)
             dispatch_async(dispatch_get_main_queue(), {
                 self.presentViewController(tweetVC, animated: true, completion: nil)
@@ -78,8 +78,8 @@ public class RootViewController: UITableViewController, TwitterAPIRequestDelegat
     @IBAction func handleTweetButtonTapped(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
             let tweetVC = SLComposeViewController (forServiceType: SLServiceTypeTwitter)
-            let message = NSLocalizedString("I just finished the first project in iOS 8 SDK Development. #pragsios8", comment:"")
-            tweetVC.setInitialText(message)
+//            let message = NSLocalizedString("I just finished the first project in iOS 8 SDK Development. #pragsios8", comment:"")
+//            tweetVC.setInitialText(message)
             presentViewController(tweetVC, animated: true, completion: nil)
         } else {
             print ("Can't send tweet")
