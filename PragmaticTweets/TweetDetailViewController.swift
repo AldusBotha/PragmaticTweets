@@ -15,6 +15,7 @@ class TweetDetailViewController: UIViewController, TwitterAPIRequestDelegate {
     @IBOutlet weak var tweetTextLabel: UILabel!
     @IBOutlet weak var tweetImageView: UIImageView!
     
+    let twitterParser = PragmaticTwitterParser()
     var tweetIdString : String? {
         didSet {
             reloadTweetDetails()
@@ -53,28 +54,21 @@ class TweetDetailViewController: UIViewController, TwitterAPIRequestDelegate {
             } catch {
                 return
             }
-            if let tweetDict = jsonObject as? [String:AnyObject] {
+            if let parsedTweet = twitterParser.parseTweet(jsonObject) {
                 dispatch_async(dispatch_get_main_queue(), {
-                    let userDict = tweetDict["user"] as! NSDictionary
-                    self.userRealNameLabel.text = userDict["name"] as? String
-                    self.userScreenNameLabel.text = userDict["screen_name"] as? String
-                    self.tweetTextLabel.text = tweetDict["text"] as? String
-                    let userImageURL = NSURL (string: userDict ["profile_image_url"] as! String!)
+                    self.userRealNameLabel.text = parsedTweet.userName
+                    self.userScreenNameLabel.text = parsedTweet.screenName
+                    self.tweetTextLabel.text = parsedTweet.tweetText
+                    let userImageURL = parsedTweet.userAvatarURL
                     self.userImageButton.setTitle(nil, forState: .Normal)
                     if userImageURL != nil {
                         if let imageData = NSData(contentsOfURL: userImageURL!) {
                             self.userImageButton.setImage(UIImage(data: imageData), forState: UIControlState.Normal)
                         }
                     }
-                    if let entities = tweetDict["entities"] as? NSDictionary {
-                        if let media = entities ["media"] as? NSArray {
-                            if let mediaString = media[0]["media_url"] as? String {
-                                if let mediaURL = NSURL(string: mediaString) {
-                                    if let mediaData = NSData (contentsOfURL: mediaURL) {
-                                        self.tweetImageView.image = UIImage(data: mediaData)
-                                    }
-                                }
-                            }
+                    if let mediaURL = parsedTweet.mediaURL {
+                        if let mediaData = NSData (contentsOfURL: mediaURL) {
+                            self.tweetImageView.image = UIImage(data: mediaData)
                         }
                     }
                 })

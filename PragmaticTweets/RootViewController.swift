@@ -15,6 +15,7 @@ import CoreImage
 public class RootViewController: UITableViewController, TwitterAPIRequestDelegate, UISplitViewControllerDelegate {
     
     var parsedTweets : Array<ParsedTweet> = []
+    let twitterParser = PragmaticTwitterParser()
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -149,18 +150,8 @@ public class RootViewController: UITableViewController, TwitterAPIRequestDelegat
             do {
                 let jsonObject : AnyObject?
                 try jsonObject = NSJSONSerialization.JSONObjectWithData(dataValue, options: NSJSONReadingOptions(rawValue: 0))
-                if let jsonArray = jsonObject as? Array<Dictionary<String, AnyObject>> {
-                    self.parsedTweets.removeAll(keepCapacity: true)
-                    for tweetDict in jsonArray {
-                        let parsedTweet = ParsedTweet()
-                        parsedTweet.tweetText = tweetDict["text"] as? String
-                        parsedTweet.createdAt = tweetDict["created_at"] as? String
-                        let userDict = tweetDict["user"] as! NSDictionary
-                        parsedTweet.userName = userDict["name"] as? String
-                        parsedTweet.userAvatarURL = NSURL (string: userDict ["profile_image_url"] as! String!)
-                        parsedTweet.tweetIdString = tweetDict["id_str"] as? String
-                        self.parsedTweets.append(parsedTweet)
-                    }
+                if let newTweets = twitterParser.parseTweets(jsonObject) {
+                    self.parsedTweets = newTweets
                     dispatch_async(dispatch_get_main_queue(), {
                         self.tableView.reloadData()
                     })

@@ -8,24 +8,26 @@
 
 import UIKit
 
-class ParsedTweet: NSObject {
+public class ParsedTweet: NSObject {
 
-    var tweetText : String?
-    var userName : String?
-    var createdAt: String?
-    var userAvatarURL : NSURL?
-    var tweetIdString : String?
+    public var tweetText : String?
+    public var userName : String?
+    public var screenName : String?
+    public var createdAt: String?
+    public var userAvatarURL : NSURL?
+    public var tweetIdString : String?
+    public var mediaURL : NSURL?
     
-    init (tweetText: String?, userName: String?, createdAt: String?, userAvatarURL : NSURL?) {
-        super.init()
+    init (tweetText: String?, userName: String?, screenName: String?, createdAt: String?, userAvatarURL : NSURL?, mediaURL: NSURL?) {
         self.tweetText = tweetText
         self.userName = userName
+        self.screenName = screenName
         self.createdAt = createdAt
         self.userAvatarURL = userAvatarURL
+        self.mediaURL = mediaURL
     }
     
     override init () {
         super.init()
     }
-    
 }

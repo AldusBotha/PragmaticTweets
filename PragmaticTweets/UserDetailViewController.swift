@@ -18,6 +18,7 @@ class UserDetailViewController: UIViewController, TwitterAPIRequestDelegate {
     
     var screenName : String?
     var userImageURL : NSURL?
+    let twitterParser = PragmaticTwitterParser()
     
     @IBAction func unwindToUserDetailVC (segue : UIStoryboardSegue) {
     }
@@ -50,13 +51,13 @@ class UserDetailViewController: UIViewController, TwitterAPIRequestDelegate {
             } catch {
                 return
             }
-            if let tweetDict = jsonObject as? [String:AnyObject] {
+            if let parsedUser = twitterParser.parseUser(jsonObject) {
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.userRealNameLabel.text = tweetDict["name"] as? String
-                    self.userScreenNameLabel.text = tweetDict["screen_name"] as? String
-                    self.userLocationLabel.text = tweetDict["location"] as? String
-                    self.userDescriptionLabel.text = tweetDict["description"] as? String
-                    self.userImageURL = NSURL (string: tweetDict ["profile_image_url"] as! String!)
+                    self.userRealNameLabel.text = parsedUser.name
+                    self.userScreenNameLabel.text = parsedUser.screenName
+                    self.userLocationLabel.text = parsedUser.location
+                    self.userDescriptionLabel.text = parsedUser.userDescription
+                    self.userImageURL = parsedUser.userAvatarURL
                     if self.userImageURL != nil {
                         if let userImageData = NSData(contentsOfURL: self.userImageURL!) {
                             self.userImageView.image = UIImage(data: userImageData)
